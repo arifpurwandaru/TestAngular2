@@ -11,7 +11,9 @@ import { InMemoryDataService }  from './in-memory-data.service';
 
 import { AppComponent }         from './app.component';
 import { EmployeeComponent }   from './employee.component';
+import { CreateComponent } from './create.component';
 import{ EmployeeService } from './employee.service';
+
 
 @NgModule({
   imports: [
@@ -23,7 +25,8 @@ import{ EmployeeService } from './employee.service';
   ],
   declarations: [
     AppComponent,
-    EmployeeComponent
+    EmployeeComponent,
+    CreateComponent
   ],
   providers: [ EmployeeService ],
   bootstrap: [ AppComponent ]
