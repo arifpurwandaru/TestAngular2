@@ -10,7 +10,8 @@ import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
 
 import { AppComponent }         from './app.component';
-import { DashboardComponent }   from './dashboard.component';
+import { EmployeeComponent }   from './employee.component';
+import{ EmployeeService } from './employee.service';
 
 @NgModule({
   imports: [
@@ -22,8 +23,9 @@ import { DashboardComponent }   from './dashboard.component';
   ],
   declarations: [
     AppComponent,
-    DashboardComponent
+    EmployeeComponent
   ],
+  providers: [ EmployeeService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

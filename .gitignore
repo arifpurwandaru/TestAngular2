@@ -1,0 +1,12 @@
+.gradle/
+.settings/
+.idea/
+.classpath
+.project
+build/
+bin/
+classes/
+node_modules/
+src/app/*.js
+src/app/*.js.map
+
