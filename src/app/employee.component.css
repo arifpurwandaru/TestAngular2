@@ -64,6 +64,7 @@ body
 #hor-minimalist-b tbody tr:hover td
 {
 	color: #009;
+	cursor: pointer;
 }
 
 

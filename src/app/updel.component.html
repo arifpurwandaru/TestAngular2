@@ -1,0 +1,38 @@
+<div *ngIf="employee">
+
+<h2>Update/Delete Employee for <span style="font-weight: bold">{{employee.name}}</span></h2>
+<table>
+<tr>
+    <td><label>Name:</label></td>
+    <td><input [(ngModel)]="employee.name"/></td>
+</tr>
+<tr>
+    <td><label>Job:</label></td>
+    <td><input [(ngModel)]="employee.job" /></td>
+</tr>
+<tr>
+    <td><label>Salary:</label></td>
+    <td><input [(ngModel)]="employee.salary"/></td>
+</tr>
+<tr>
+    <td><label>Bonus:</label></td>
+    <td><input [(ngModel)]="employee.bonus"/></td>
+</tr>
+<tr>
+    <td><label>Supervisor:</label></td>
+    <td><input [(ngModel)]="employee.supervisor"/></td>
+</tr>
+<tr>
+    <td>
+        <button (click)="save();">
+            Update
+        </button>
+    </td>
+    <td>
+        <button (click)="delete();">
+            Delete
+        </button>
+    </td>
+</tr>
+</table>
+</div>

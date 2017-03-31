@@ -1,7 +1,32 @@
 <h2>Create Employee</h2>
 <div>
-  <label>Name:</label> <input #emplName />
-  <button (click)="add(emplName.value); emplName.value=''">
-    Add
-  </button>
+<table>
+<tr>
+    <td><label>Name:</label></td>
+    <td><input #emplName /></td>
+</tr>
+<tr>
+    <td><label>Job:</label></td>
+    <td><input #emplJob /></td>
+</tr>
+<tr>
+    <td><label>Salary:</label></td>
+    <td><input #emplSal /></td>
+</tr>
+<tr>
+    <td><label>Bonus:</label></td>
+    <td><input #emplBon /></td>
+</tr>
+<tr>
+    <td><label>Supervisor:</label></td>
+    <td><input #emplSup /></td>
+</tr>
+<tr>
+    <td>
+        <button (click)="add(emplName.value,emplJob.value, emplSal.value, emplBon.value, emplSup.value); emplName.value='';emplJob.value='';emplSal.value='';emplBon.value='';emplSup.value='';">
+            Add
+        </button>
+    </td>
+</tr>
+</table>
 </div>

@@ -39,9 +39,9 @@ export class EmployeeService{
       .catch(this.handleError);
   }
 
-  create(name: string): Promise<Employee> {
+  create(name: string,job: string, salary: string, bonus: string, supervisor: string): Promise<Employee> {
     return this.http
-      .post(this.theUrl, JSON.stringify({name: name}), {headers: this.headers})
+      .post(this.theUrl, JSON.stringify({name: name,job: job, salary: salary, bonus: bonus, supervisor: supervisor}), {headers: this.headers})
       .toPromise()
       .then(res => res.json().data as Employee)
       .catch(this.handleError);

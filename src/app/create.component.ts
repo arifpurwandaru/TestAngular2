@@ -21,10 +21,10 @@ export class CreateComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  add(name: string): void {
+  add(name: string, job: string, salary: string, bonus: string, supervisor: string): void {
     name = name.trim();
     if (!name) { return; }
-    this.employeeService.create(name) 
+    this.employeeService.create(name,job,salary,bonus,supervisor) 
       .then(employee => {
         this.router.navigate(['/listempl']);
       });

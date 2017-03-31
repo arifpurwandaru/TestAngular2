@@ -12,7 +12,6 @@ import { EmployeeService }         from './employee.service';
 
 export class EmployeeComponent implements OnInit{
     employees: Employee[]
-    selectedEmployee: Employee
 
     constructor(
     private employeeService: EmployeeService,
@@ -31,11 +30,7 @@ export class EmployeeComponent implements OnInit{
 
 
   onSelect(employee: Employee): void {
-    this.selectedEmployee = employee;
-  }
-
-  gotoDetail(): void {
-    this.router.navigate(['/detail', this.selectedEmployee.id]);
+    this.router.navigate(['/updel',employee.id]);
   }
 
 }
